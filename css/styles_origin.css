@@ -1,0 +1,209 @@
+
+.index {
+    animation-duration: 4s;
+    animation-name: aparecer;
+    background-image: url(../Recursos/Imagenes/nico_celular.jpg);
+    background-size: cover;
+    background-color: rgb(28, 26, 27);
+    font-family: 'Oswald', sans-serif;
+    height: 100vh ;
+
+}
+
+@media (min-width: 700px) {
+    .index {
+        background-image: url(../Recursos/Imagenes/nico_recortado2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        font-size: 20px;
+        height: 100vh;
+
+    }
+}
+
+
+
+a {
+    text-decoration :none
+   
+}
+li {
+    list-style: none;
+}
+
+a:hover,a:visited,a:link {
+    color: rgb(255, 255, 255);
+    
+  }
+
+
+.HEADER {  
+    padding: 10px;
+    margin-top: 40px;
+    color: aliceblue;            
+}
+
+.Indices_header {
+display: flex;
+/*justify-content: space-evenly;*/
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+@media (min-width: 700px) {
+    .Indices_header {
+        display: flex;
+        /*justify-content: space-evenly;*/
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        }
+}
+
+
+
+.Indices {
+    margin-top: 5px;
+    padding: 3px;
+
+}
+
+.AREA { 
+  
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0px;
+    height: 500px;
+    color: rgb(255, 255, 255);
+
+}
+
+  
+  @keyframes aparecer {
+    0% {
+     opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.FOOTER { 
+
+    
+    color: aliceblue; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
+
+.barra-iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-top: 50px;
+    color: aliceblue;
+    margin: 20px 30px 20px ;
+    width: 5vh;
+    height: 5vh;
+}
+
+.parrafo_footer {
+    margin: 20px;
+    padding: 10px;
+    animation-name: aparecer;     
+}
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+   }
+/* composiciones */
+
+   .composicion {
+    background-color: rgb(28, 26, 27);
+    font-family: 'Oswald', sans-serif;
+    height: 100vh ;
+    font-size: 20px;
+}
+
+.frame {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+
+
+}
+
+.video1 {
+    
+    display: flex;      
+    width: 80vh;
+}
+
+.contenedor {
+    color: rgb(70, 77, 83);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos_proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+
+}
+
+@media (max-width: 600px) {
+    .frame {
+        width: 40vh;
+        }
+    .video1 {
+        width: 40vh;
+    }
+}
+
+/*clases*/
+
+.cartas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 30px;
+}
+
+.formulario {
+    color: aliceblue;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

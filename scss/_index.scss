@@ -1,0 +1,54 @@
+
+
+@mixin values {
+    background-size: cover;
+    background-color: rgb(28, 26, 27);
+    font-family: 'Oswald', sans-serif;
+    height: 100vh ;
+  }
+  
+.index {
+    background-image: url(../Recursos/Imagenes/nico_celular.jpg);
+    @include values;
+}
+
+@media (min-width: 700px) {
+    .index {
+        background-image: url(../Recursos/Imagenes/nico_recortado2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        font-size: 20px;
+        @include values;
+
+
+    }
+}
+
+.HEADER {  
+    padding: 10px;
+    margin-top: 40px;
+    color: aliceblue;            
+}
+.AREA { 
+  
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0px;
+    height: 500px;
+    color: rgb(255, 255, 255);
+
+}
+.FOOTER { 
+
+    
+    color: aliceblue; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
+}
